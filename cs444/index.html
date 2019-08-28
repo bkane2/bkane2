@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-GB" xml:lang="en-GB">
+
+<HEAD>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <TITLE>Benjamin Kane CSC 244/444 Page (2019)</TITLE>
+  <link rel="stylesheet" href="../vendors/bulma/css/bulma.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</HEAD>
+
+<BODY>
+
+  <section>
+    <nav class="navbar is-link">
+      <div class="container">
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a href="../index.html" class="navbar-item">
+              Home
+            </a>
+            <a href="index.html" class="navbar-item is-active">
+              CSC 244/444
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="hero is-info is-bold is-medsmall has-background">
+    <img alt="Colorful room" class="hero-background is-transparent" src="../images/background1.png" />
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="level title">
+          <!-- Left side -->
+          <div class="level-left">
+            <div class="level-item">
+              <div>
+                <h1 class="title">
+                  Benjamin Kane
+                </h1>
+                <hr>
+                <h2 class="subtitle">
+                  CSC 244/444 TA Page
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Right side -->
+          <div class="level-right">
+            <figure class="level-item image is-256x256">
+              <img src="../images/t.png" class="is-transparent">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section>
+    <div class="container">
+          <hr>
+          <h1 class="title">Announcements<h1>
+            <div class="content">
+            <ul>
+              <li><p>No announcements yet!</p></li>
+            </ul>
+            </div>
+          <!-- <hr class="small-hr"> -->
+    </div>
+
+    <div class="container">
+        <hr>
+        <h1 class="title">Office Hours & Contact<h1>
+          <div class="content">
+          <p>My office hours are:</p>
+          <ul>
+            <li><p>Monday from 2:00 - 3:00</p></li>
+            <li><p>Friday from 2:00 - 3:00</p></li>
+          </ul>
+          <p>In room <span class="has-text-weight-bold">TBA</span></p>
+          <p>Please feel free to email me (bkane2@ur.rochester.edu) if you need to speak to me but can't make office hours for some reason, and I can try to work something out.</p>
+          </div>
+        <!-- <hr class="small-hr"> -->
+    </div>
+
+    <div class="container">
+        <hr>
+        <h1 class="title">Written Assignments<h1>
+        <div class="content">
+        <p>Please submit your written assignment solutions to <span class="has-text-weight-bold">uploads.cs444.2019@gmail.com</span> (use this email even if you're in 244). If for some reason you can't provide a digital copy via email,
+           I also accept paper copies, which you can drop off in my mailbox in Wegmans 3014.</p>
+        <p>All assignments are due before class, unless explicitly stated otherwise.</p>
+        <p>Typed assignment solutions are strongly preferred. I recommend using <span class="has-text-weight-bold"><a href="https://www.overleaf.com">Overleaf</a></span>, which is a very easy-to-use online LaTeX editor (you can also use
+          <span class="has-text-weight-bold"><a href=https://www.mathcha.io>Mathcha</a></span> to create math/graphics and export them in LaTeX). Not only does this make it easier to grade, knowing how to create documents using LaTeX is
+          also a valuable skill to have. If you do hand-write assignment solutions, please take extra care to ensure legibility.</p>
+        </div>
+   </div>
+
+   <div class="container">
+      <hr>
+      <h1 class="title">Lisp Assignments<h1>
+      <div class="content">
+      <p>Please submit your Lisp assignments to <span class="has-text-weight-bold">uploads.cs444.2019@gmail.com</span>. The submission should be a <span class="has-text-weight-semibold">zip/rar/7z/tarball</span> file
+         with the name <span class="has-text-weight-bold">[firstinitial][lastname]_[assignmentnumber].[extension]</span>. For example, if I'm submitting my Lisp Assignment 0 solutions, my submission should be titled bkane_0.zip. The
+         compressed submission should contain the following files:</p>
+      <ul>
+        <li><p><span class="has-text-weight-bold">[firstinitial][lastname]_src.lisp</span> (e.g. bkane_src.lisp)</p></li>
+        <li><p><span class="has-text-weight-bold">[firstinitial][lastname]_test.lisp</span> (e.g. bkane_test.lisp)</p></li>
+        <li><p><span class="has-text-weight-bold">README.txt</span></p></li>
+      </ul>
+      <p>Your .lisp files should all be executable using Steel Bank Common Lisp (sbcl) - more on this in the 'Lisp Information' section below. Your code should not rely on any external libraries.</p>
+      <p><span class="has-text-weight-bold">In the src.lisp file</span>, you should implement each function required by the assignment. Each function should have a comment describing what that function takes as input, what it does, and what it produces as output. If it's a
+         simple function, a short sentence is fine. If it's a complex function, please give a longer description (three or more lines). Furthermore, unless doing so would directly harm readability, please try to keep your code to 100
+         characters or less per line.
+      </p>
+      <p>Please make sure your code runs without crashing when loaded into the REPL. If anything does cause the code to break when loaded, please stub/comment out the problematic code. It will be much better (both for me and for your grade) to have
+         some of the test cases fail than for me to have to modify your code to get it to run. Your functions should also <span class="has-text-weight-semibold">check function inputs for validity</span>. This can be done most effectively using an outer
+         <span class="has-text-weight-semibold">cond</span> statement which prints error messages to the console and returns nil from the function if some input is bad, or executes the rest of the function in the default case (if multiple functions take
+         the same sorts of inputs, you may want to abstract some helper functions to verify those inputs).
+      </p>
+      <p><span class="has-text-weight-bold">In the test.lisp file</span>, you should have test cases for each of the functions required by the assignment. Each test case should run the function with given inputs, and compare the output of the function to the expected output. Your test cases
+         should be <span class="has-text-weight-semibold">comprehensive</span> - this is very important! Test-driven development is a very good practice to get used to, and is widely used in industry. This means that you should test 'normal cases', as
+         well as 'edge cases', up to and including potentially bad or unexpected inputs (e.g. empty lists, integer where a list is expected, etc.). Otherwise, your program may very likely crash the REPL when I test edge cases as part of my grading.</p>
+      <p>For each test case, you should print to standard output (a) the function and the input being used to test it, (b) the expected result, (c) the actual result, and (d) whether the test case passed (a boolean value). See <a href="http://www.gigamonkeys.com/book/practical-building-a-unit-test-framework.html">this page</a> for some advice on implementing a test suite in Lisp.</p>
+      <p><span class="has-text-weight-bold">In the README.txt file</span>, you should give a reasonable description for each of your algorithm implementations, including the format of inputs and outputs and whatever else I might need to test your code. Explain why
+         you made any particular design decisions, and notes on any clever tricks you used that I might not be able to understand just by looking at them. Also include any known issues with the code, and try to discuss any test cases which are failing. If you're running out of time and can't implement something, describe in the writeup in more detail how you would have done it - you might
+         be able to earn some partial credit for this. If a Lisp assignment asks any written questions, create a section for the answers in the writeup. Finally, provide citations for any code which you may have gotten from the web!</p>
+      <p><span class="has-text-weight-bold">Grading of the Lisp assignments</span> will be up to 60% based on the code's <span class="has-text-weight-semibold">functionality</span>, i.e. how well it passes my own (private) test suite. The other 40% of the grade will be based on some combination
+         of your <span class="has-text-weight-semibold">test suite's comprehensiveness</span>, the quality of your <span class="has-text-weight-semibold">writeup</span>, and your coding/comment <span class="has-text-weight-semibold">style</span> (see 'Lisp Information' below for more details on style). Even if you cannot get some function to work properly by
+         the due date, you can still earn substantial partial credit by thoroughly creating test cases for that function, trying to figure out more precisely where the issue lies, and discussing it in your writeup, so take this seriously when working on your assignments!</p>
+      </div>
+   </div>
+
+   <div class="container">
+      <hr>
+      <h1 class="title">Late Policy and Regrading Policy<h1>
+      <div class="content">
+        <p>I generally don't start grading assignments until at least the next day, so I will accept assignments up to one day late for <span class="has-text-weight-semibold">10% off</span>. If you need to submit later than one day, and you have a really good reason, send me an email and we can talk
+           about it.</p>
+        <p>If you believe that I or another TA made a mistake while grading, and you want to appeal your grade, let me know (via email or office hours) within <span class="has-text-weight-semibold">5 days</span> of receiving your grade. However, if you do choose to appeal, please include a written
+           statement of why you think the grade is incorrect, and what specifically you want me to take another look at. Furthermore, I suggest looking at the mean/median/mode statistics for each item (which I will send out upon returning graded assignments) before making an appeal - if you think I
+           graded something too harshly, there's a chance I graded it too harshly for everyone, and so your final grade will be interpreted with this in mind.</p>
+      </div>
+   </div>
+
+   <div class="container">
+      <hr>
+      <h1 class="title">Lisp Information<h1>
+      <div class="content">
+        <p>The Lisp implementation to be used for this class is <a href="http://www.sbcl.org">Steel Bank Common Lisp (SBCL)</a>, which should already be installed on the school machines (but it should be easy to install on a personal computer as well). The REPL can be started from the command line by typing the command <span class="has-text-weight-semibold">sbcl</span>,
+           and can be quit using the Lisp expression <span class="has-text-weight-semibold">(exit)</span> or pressing <span class="has-text-weight-semibold">ctrl+D</span>. While in the REPL, a Lisp file can be loaded/executed using <span class="has-text-weight-semibold">(load "[filename]")</span>. You can also enter Lisp expressions
+           into the REPL directly for evaluation, which can be very useful for allowing you to test code as you develop it.</p>
+        <p>Most likely, programming in Lisp, or possibly any strongly symbolic/functional language, will be completely new to you. Although I will hold Lisp training sessions at the beginning of the course, the following online resources should all be helpful:</p>
+        <ul>
+          <li><p><span class="has-text-weight-bold"><a href="https://www.cs.rochester.edu/~schubert/444/notes/lisp-intro.pdf">A Quick Introduction to Common Lisp</a></span> - an introduction to Lisp written by Len Schubert.</p></li>
+          <li><p><span class="has-text-weight-bold"><a href="http://www.gigamonkeys.com/book/">Practical Common Lisp</a></span> - an online book which gives an easy (not too technical) introduction to the language.</p></li>
+          <li><p><span class="has-text-weight-bold"><a href="http://cs.rochester.edu/u/gkim21/lisp_highlights.pdf">Lisp Tutorial</a></span> - a brief tutorial by Gene Kim covering a few important Lisp functions and operators.</p></li>
+          <li><p><span class="has-text-weight-bold"><a href="http://www.lispworks.com/documentation/lw50/CLHS/Front/Contents.htm">Common Lisp HyperSpec (CLHS)</a></span> - a comprehensive documentation of everything included in the Common Lisp specification. Most likely, you do not need to read through most of the HyperSpec to be able to
+              do the tasks needed for this course, but rather if you're wondering how to perform some task in Lisp, you should google the keyword followed by "clhs".</p></li>
+        </ul>
+        <p>In general, try to learn how to program in a <span class="has-text-weight-semibold"><a href="https://en.wikipedia.org/wiki/Functional_programming">functional paradigm</a></span> in this course - whenever possible, you should favor implementing functions in terms of recursion and map/filter/reduce operations above iterative loops and
+           storing variables (although Lisp does have capacity for iterative loops, and storing local/global variables). Furthermore, try to learn and use <span class="has-text-weight-semibold"><a href="https://lisp-lang.org/style-guide/">Lisp style conventions</a></span>. Both of these aspects will be factored into the
+           <span class="has-text-weight-semibold">coding style</span> component of the grade for Lisp assignments mentioned above.</p>
+        <p><span class="has-text-weight-bold">Optional:</span></p>
+        <p>Unfortunately, the normal SBCL REPL doesn't allow for arrow-key navigation, which I personally find a bit frusterating. Luckily, this functionality can be added through the <span class="has-text-weight-semibold"><a href="https://github.com/sharplispers/linedit">linedit</a></span> library. Installation steps are as follows:</p>
+        <ol>
+          <li><p>First, you need to install <span class="has-text-weight-semibold"><a href="https://www.quicklisp.org/beta/">Quicklisp</a></span>, a package manager for Lisp. Follow the installation instructions on the site. After installing, make sure to enter <span class="has-text-weight-semibold">(ql:add-to-init-file)</span> while in
+                 the REPL, which will make it so Quicklisp loads automatically any time the REPL is started.</p></li>
+          <li><p>Next, find and open the <span class="has-text-weight-semibold">.sbclrc</span> file in your home directory. The file should already exist from the first step, and should contain a few lines added by Quicklisp. Verify that this is the case.</p></li>
+          <li><p>At the end of the file, add the following two lines, in order: <span class="has-text-weight-semibold">(ql:quickload "linedit")</span> and <span class="has-text-weight-semibold">(linedit:install-repl :wrap-current t :eof-quits t)</span></p></li>
+          <li><p>Start the SBCL REPL and verify that arrow-key navigation works.</p></li>
+        </ol>
+        <p>Quicklisp can be used to install a large number of libraries for Lisp, so it's a useful thing to have if for some reason you plan to do any further work in Lisp. However, none of your assignment submissions in this course should rely on external libraries in order to work properly.</p>
+      </div>
+      <hr>
+      <hr>
+      <hr>
+   </div>
+    
+  </section>
+
+
+
+
+
+
+
+  <footer class="footer fix-footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Contact:</strong> <a href="mailto:bkane2@ur.rochester.edu">bkane2@ur.rochester.edu</a>
+      </p>
+    </div>
+  </footer>
+</BODY>
+
+</HTML>

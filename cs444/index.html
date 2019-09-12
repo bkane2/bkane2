@@ -71,7 +71,6 @@
           <h1 class="title">Announcements<h1>
             <div class="content">
             <ul>
-              <li><p>A Lisp tutorial will be held on Sept 6th (Friday) during the usual office hour time and place (2:00 - 3:00 @ Wegmans 2215). I think the best way to learn is simply to try out some example problems and explain concepts as we run into them, so try to bring a personal computer if you have one! I suggest installing Steel Bank Common Lisp beforehand so it doesn't eat up time during the tutorial - it's pretty easy to do, see the 'Lisp Information' section below for more info.</p></li>
 	      <li><p>I will be absent from Sept 13th to Sept 20th due to a conference. The undergraduate TA Brendon Pon will fill in for my office hours on Sept 13th and Sept 20th (both Fridays), but the office hours on Sept 16th (Monday) will be cancelled. I will try to reply to emails as quickly as possible as well, so feel free to contact me via email if you need to.</p></li>
             </ul>
             </div>
@@ -87,7 +86,7 @@
             <li><p>Monday from 2:00 - 3:00</p></li>
             <li><p>Friday from 2:00 - 3:00</p></li>
           </ul>
-          <p>In room <span class="has-text-weight-bold">Wegmans 2215</span></p>.
+          <p>In room <span class="has-text-weight-bold">Wegmans 2215</span>.</p>
           <p>Please feel free to email me (bkane2@ur.rochester.edu) if you need to speak to me but can't make office hours for some reason, and I can try to work something out.</p>
           </div>
         <!-- <hr class="small-hr"> -->
@@ -125,7 +124,7 @@
       </p>
       <p>Please make sure your code runs without crashing when loaded into the REPL. If anything does cause the code to break when loaded, please stub/comment out the problematic code. It will be much better (both for me and for your grade) to have
          some of the test cases fail than for me to have to modify your code to get it to run. Your functions should also <span class="has-text-weight-semibold">check function inputs for validity</span>. This can be done most effectively using an outer
-         <span class="has-text-weight-semibold">cond</span> statement which prints error messages to the console and returns nil from the function if some input is bad, or executes the rest of the function in the default case (if multiple functions take
+         <span class="has-text-weight-semibold">cond</span> statement which returns '**ERROR** from the function (and optionally prints some informative error message) if some input is bad, or executes the rest of the function in the default case (if multiple functions take
          the same sorts of inputs, you may want to abstract some helper functions to verify those inputs).
       </p>
       <p><span class="has-text-weight-bold">In the test.lisp file</span>, you should have test cases for each of the functions required by the assignment. Each test case should run the function with given inputs, and compare the output of the function to the expected output. Your test cases

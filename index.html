@@ -65,7 +65,7 @@
     <div class="container">
       <hr>
       <h1 class="title">Bio<h1>
-          <p>I'm a fifth-year PhD student of Computer Science at the University of Rochester, with a focus on Artificial Intelligence.
+          <p>I'm a final-year PhD student of Computer Science at the University of Rochester, with a focus on Artificial Intelligence.
             Before that, I graduated from the University of Rochester with a BS in Computer Science as well as a BA in Economics, giving
             me an interest in the practical applications of intelligent agents towards the social sciences and real-world domains. Currently,
             my general research interests include <span class="has-text-weight-bold">dialogue management for virtual conversational agents</span>,
@@ -82,52 +82,52 @@
           <div class="content">
           <ul>
             <li>
-              <p><b>Blocks World dialogue system:</b> Creation of an end-to-end dialogue system capable of holding a spatial
-                question-answering dialogue with a human about physical blocks which can be freely arranged on a table.
-                Designed a semantic parser capable of processing a wide range of spatial questions into unscoped logical form
-                (ULF) representations using hierarchical pattern transduction trees. Improved dialogue context and episodic memory
-                in dialogue system to enable the system to answer questions about historical actions and relations.
-                Supported by the <a href="https://www.darpa.mil/program/communicating-with-computers">DARPA Communicating with Computers grant</a>.
-                <em>(Collaboration with <a href="https://www.cs.rochester.edu/u/gplatono/">Georgiy Platonov</a>)</em></p>
+              <p><b>Eta Dialogue Manager:</b> Large Language Models have recently been demonstrated to be competent conversational agents
+                in various domains, but they remain prone to hallucination, and often are costly in complex simulations. What if an agent
+                could "think fast and slow", using a flexible and user-configured combination of LLMs and symbolic pattern transduction? This
+                has been the focus of my work on the <a href="https://github.com/bkane2/eta-py">Eta Dialogue Manager</a> (a pun on "<em>Eta</em>oin shrdlu"
+                and SHRDLU, Terry Winograd's famous Blocks World agent) — a dialogue manager that uses "transducers" to interpret the user,
+                reason, update its conversation plan, and generate responses, all based on a core "event schema" representation encoding knowledge
+                about expected dialogue flows. Some of the subsequent projects have been developed using this dialogue framework.</p>
             </li>
             <li>
-              <p><b>SOPHIE (end-of-life communication dialogue system):</b> Creation of a dialogue system and virtual human
-                capable of acting as a cancer patient in practice doctor-patient dialogues. Developed in conjunction with
-                collaborators in the ROC HCI lab and the UR Medical Center (URMC), with the goal of helping doctors to improve
-                communication in end-of-life dialogue scenarios.
-                <em>(Collaboration with <a href="https://roc-hci.com">ROC HCI</a> and <a href="https://www.urmc.rochester.edu/family-medicine/research/communication-disparities.aspx">URMC Center for Communication and Disparities Research</a>)</em></p>
+              <p><b>SOPHIE conversational agent (end-of-life communication):</b> A significant challenge that healthcare workers face is delivering difficult news to
+                patients in a manner that is explicit, yet also empathetic and delivered in a way that empowers the patient. Continually practicing
+                these skills through simulated medical scenarios is critical for optimal patient outcomes, yet made difficult to the limited supply and
+                relative lack of demographic diversity among human standardized patient actors. The SOPHIE project is an interdisciplinary effort (in collaboration with the
+                <a href="https://roc-hci.com">ROC HCI</a> lab and the <a href="https://www.urmc.rochester.edu/family-medicine/research/communication-disparities.aspx">URMC Center for Communication and Disparities Research</a>)
+                to create a multimodal virtual standardized patient using AI, with the goal of helping doctors to improve communication in end-of-life dialogue scenarios
+                through automated feedback. I helped to develop the dialogue capabilities of SOPHIE, resulting in a successful pilot study of the system with medical students
+                from the URMC.</p>
             </li>
             <li>
-              <p><b>Belief, Desire, and Fine-Grained Inference:</b> Collection of lexical-scale human annotations targeting the
-                belief & desire properties of different English verbs. Empirical analysis of the relations between these lexical semantic
-                properties and the syntactic distributions of these verbs. Creation of mixed-effects models which can be integrated
-                with NLI systems to model annotator differences. Part of the <a href="http://megaattitude.io">MegaAttitude project</a>.
-                <em>(Collaboration with <a href="https://www.cs.rochester.edu/u/wgantt/">Will Gantt</a>)</em></p>
-            </li>
-            <!-- <li>
-              <p>Designing a dialogue manager for a virtual agent capable of holding a series of open-ended conversations with older adults,
-              with the aim of creating a system that humans can use to practice conversational skills and receive dynamic feedback.</p>
-            </li>
-            <li>
-              <p>Creating a dialogue manager and virtual agent which is able to interpret complex spatial questions in a 'blocks world' QA system.</p>
+              <p><b>Blocks World QA/tutoring agent:</b> The Blocks World domain - consisting of several named/colored blocks on a flat 3D surface - is a classic
+                testbed for spatial reasoning and planning capabilities. Despite its relative simplicity, tackling this domain in its full
+                complexity requires the agent to exhibit a rich set of functional capabilities, ranging from vision to natural language
+                understanding. I created a conversational agent that is capable of spatial/temporal QA and collaborative structure-building
+                in a physically situated blocks world setting, given a "spatial reasoning specialist" module that calculates spatial relations
+                in terms of low-level primitives. This work involved the integration of several capabilities, including a semantic parser capable
+                of processing user inputs into structural logical forms (<a href="https://cse.usf.edu/~genekim/ulf/">ULF</a>), a spatial reasoner and planner,
+                and an episodic memory for answering questions about the history of the interaction.
+                Supported by the <a href="https://www.darpa.mil/program/communicating-with-computers">DARPA Communicating with Computers grant</a>.</p>
             </li>
             <li>
-              <p>Applying machine learning models to predict turn-taking in open-ended human-computer dialogue, using various features
-                relating to syntactic and semantic completion as well as speech prosody.
-              </p>
+              <p><b>MegaIntensionality: </b> Certain English sentences can give rise to inferences pertaining to the belief, desire, and intentional
+                states of the agents in the sentences. Not only are these inferences of import to Linguists — as they are putatively related to patterns in the syntactic
+                distributions of verbs and provide evidence for (or against) certain generalizations — but they are also relevant to dialogue systems, since (inferred)
+                beliefs and desires of the user can be used to steer a conversation. The focus of the <a href="http://megaattitude.io/projects/mega-intensionality/">MegaIntensionality project</a>
+                (a collaboration with <a href="https://www.cs.rochester.edu/u/wgantt/">Will Gantt</a> and <a href="http://aaronstevenwhite.io">Dr. Aaron Steven White</a>)
+                is to model and analyze these inferences given lexical-scale human annotations. We collected a dataset of such annotations across a variety of verbs and syntactic contexts,
+                and conducted analysis of the data using Bayesian mixed-effects mixture models. We also demonstrated that mixed-effects models can be integrated with standard
+                supervised natural language inference (NLI) models to capture differences between individual annotators during training time.</p>
             </li>
-            <li>
-              <p>Annotating a varied corpus of natural-language sentences with unscoped logical form (ULF) representations, and creating code
-                to generate Natural Logic-like inferences over ULF for a set of clause-taking verbs.
-              </p>
-            </li> -->
           </ul>
           </div>
 
           <hr class="small-hr">
 
-          <p>In my free time, I'm an avid martial artist, and currently train in Brazilian Jiu Jitsu and Isshin-ryū Karate. I also enjoy music
-            (I play flute and synthesizers), photography, and am an administrator/texture developer/builder for <a href="https://westeroscraft.com">WesterosCraft</a>.</p>
+          <p>In my free time, I'm an avid martial artist, and am currently a blue belt in Brazilian Jiu Jitsu, and have previously earned a black belt (1st Dan) in Isshin-ryū Karate.
+            I also dabble in music (flute and synthesizers), and am an administrator/texture developer/builder for <a href="https://westeroscraft.com">WesterosCraft</a>.</p>
 
           <hr class="small-hr">
 
@@ -135,10 +135,10 @@
 
     <div class="container">
       <h1 class="title">
-        CV
+        Resume
       </h1>
-      <a href="documents/CV.pdf">
-        <p>Click here to view CV.</p>
+      <a href="documents/Resume.pdf">
+        I am currently on the market for post-graduation work, primarily within industry. <p>Click here to view Resume.</p>
       </a>
       <hr class="small-hr">
     </div>
